@@ -46,16 +46,20 @@
        <h1><font color=red> Django</font></h1>
         <h3>Django er en måde at lave apps på. Der er flere måder at ændre udseende på bl.a via bootstrap og css.<br>I listen er der et lille udpluk af sider og apps til at lære Django</h3>
         <h6><b><u>BEMÆRK:</u></b>Der er ny menu-bar til denne del.</h6>
+        <br>
         {% for djan in django %}
-        <ld>
-            <tk>
-                <li>Titel: {{djan.title}}</li>
-                <li>Beskrivelse: {{djan.beskriv}}</li>
-                <li>Link: {{djan.link}}</li>
-                <li>App: {{djan.app_link}}</li>
-                <li>Login: {{djan.login}}
-            </tk>
-        </ld>
+        <p><code>.flex-wrap:</code></p>
+  <div class="d-flex flex-wrap bg-info">
+    <div class="p-2 border"></div>
+        
+                <li><b><u><i>Titel:</b></u></i> {{djan.title}}</li>
+                <li><b><u><i>Beskrivelse:</b></u></i> {{djan.beskriv}}</li>
+                <li><b><u><i>Link: </b></u></i><a class = "btn btn-green"href= {{ djan.link }} target="_blank" />{{djan.title}}</a></li>
+                <li><b><u><i>App:</b></u></i> {{djan.app_link}}</li>
+                <li><b><u><i>Login: </b></u></i>{{djan.login}}
+            
+    </div>
+        <hr>
         {% endfor %}
 
       </div>  

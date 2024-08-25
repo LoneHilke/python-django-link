@@ -7,16 +7,15 @@ class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'app/forside.html')
     
-class Python(View):
+class PythonView(View):
     def get(self, request, *args, **kwargs):
         python = Python.objects.all()
         context = {
-        
         'python': python,
-      } 
+        } 
         return render(request, 'app/python.html', context)
     
-class Django(View):
+class DjangoView(View):
     def get(self, request, *args, **kwargs):
         django = Django.objects.all()
         context ={

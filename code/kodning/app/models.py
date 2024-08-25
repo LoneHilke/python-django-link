@@ -7,6 +7,7 @@ class Python(models.Model):
     link_app = models.CharField(max_length=50)
     link = models.URLField(blank=True)
     login = models.CharField(max_length=50, blank=True)
+    objects = models.Manager()
 
     def __str__(self):
       return self.title

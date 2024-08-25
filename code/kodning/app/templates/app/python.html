@@ -55,22 +55,25 @@
                 I den nye navigations bar ligger der links til nogle af de programmer.<br>
                 Her kommer en liste over gode begynder sider og apps.</h5>
                 <hr>
-                <div class="row justify-content-center mt-1">
-                    <div class="col-md-12 col-sm-12 p-4">
+                <div class="container mb-15">
+               <!--<div class="row justify-content-center mt-15">  -->
+                    <div class="col-md-15 col-sm-15 p-1">
                       
-                      <div class="row">
+                     <!--<div class="row ">  -->
                      
-                        <!--<div class="col-sm-6">-->
-                          <div class="row g-0">
+                      <div class="col-sm-20">  
+                          <div class="row g-13"><!-- -->  
                          
                           {% for pyt in python %}
                          
+                          <div class="col-sm-3">
                             <div class="card-header">
                               <div class='card w-30'>
-                                <div class="row g-0">
-                                  <div class="col-md-4">
+                                <div class="row g-3">
+                                  <div class="col-md-5">
                                     <div class="card" style="width: 18rem;">
-                                    
+                                      <div class="col-md-4 col-sm-10">
+                                      </div>
                                         <div class="card-body">
                                           <h5><b><u>App navn: </u></b></h5>
                                           <h5 class="card-title">{{pyt.title}}</h5>
@@ -87,15 +90,17 @@
                                         </div>
                                     </div>
                                   </div>
-                                </div><!---->
+                              <!-- </div>  -->
                               </div>
                             </div>
-                            
+                        </div>
+                    </div>
                             {% endfor %}
-                          </div>
+                          <!--</div> -->
                       </div>
                     </div>
                   </div>
+                </div>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
            
