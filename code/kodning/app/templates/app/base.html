@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", inital-scale=1.0, shrink-to-fit=no">
-      <title>Fødselsdag</title>
+      <title>Links</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Google Fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -11,6 +11,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
     </head>
     <body>
 
@@ -25,10 +27,10 @@
           <a class="nav-link active" aria-current="page" href="{% url 'django' %}">Django</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Deploy</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'deploy' %}">Deploy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Terminals</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'terminals' %}">Terminals</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Kontakt</a>
@@ -39,7 +41,7 @@
       <div class="container mb-3">
         <div class="row justify-content-center mt-3">
           <div class="col-md-8 col-sm-12 offset md-1 p-4 text-center">
-            <font color=green><h1><b><u>Links til Python og Django</u></b></h1></font>
+            <font color=green><h1><b><u><i>Links til Python og Django</i></u></b></h1></font>
       {% block content %}
 
       {% endblock content %}
