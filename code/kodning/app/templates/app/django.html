@@ -26,16 +26,16 @@
               <a class="nav-link" href="#section3">CSS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section4">Tilbage</a>
+              <a class="nav-link" href="#section4">HTML</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section5"></a>
+              <a class="nav-link" href="#section5">Tilbage</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section6"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section7">Reminder</a>
+              <a class="nav-link" href="#section7"></a>
             </li>
           </ul>
         </div>
@@ -46,27 +46,28 @@
        <h1><font color=red> Django</font></h1>
         <h3>Django er en måde at lave apps på. Der er flere måder at ændre udseende på bl.a via bootstrap og css.<br>I listen er der et lille udpluk af sider og apps til at lære Django</h3>
         <h6><b><u>BEMÆRK:</u></b>Der er ny menu-bar til denne del.</h6>
-        <br>
+        <br> <p><code>.flex-wrap:</code></p>
         {% for djan in django %}
-        <p><code>.flex-wrap:</code></p>
-  <div class="d-flex flex-wrap bg-info">
+       
+  <div class="d-flex flex-wrap bg-warning">
     <div class="p-2 border"></div>
-        
+       <tk>
                 <li><b><u><i>Titel:</b></u></i> {{djan.title}}</li>
                 <li><b><u><i>Beskrivelse:</b></u></i> {{djan.beskriv}}</li>
-                <li><b><u><i>Link: </b></u></i><a class = "btn btn-green"href= {{ djan.link }} target="_blank" />{{djan.title}}</a></li>
+                
                 <li><b><u><i>App:</b></u></i> {{djan.app_link}}</li>
-                <li><b><u><i>Login: </b></u></i>{{djan.login}}
-            
+                <li><b><u><i>Login: </b></u></i>{{djan.login}}</li>
+                <li><b><u><i>Link: </b></u></i><a href= {{ djan.link }} target="_blank" />{{djan.title}}</a></li>
+       </tk>
     </div>
         <hr>
         {% endfor %}
 
       </div>  
 
-      <div id="section2" class="container-fluid bg-warning text-white" style="padding:100px 20px;">
+      <div id="section2" class="container-fluid bg-danger text-white" style="padding:100px 20px;">
         
-       <h1><font color=red> Bootstrap</font></h1>
+       <h1><font color=green> Bootstrap</font></h1>
         <h3>I bootstrap er der udover navigation og meget andet så som card, knap og listeboxe meget andet til at sætte siderne op med</h3>
         <h4><b><u><a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>Bootstrap 5</small> </a></u></b></h4>
       </div>  
@@ -76,7 +77,17 @@
          <h3>CSS er en måde til opsætning af sider med farver m.m.<br>Det kan være en del inde i html, bootstrap og andet eller en mappe for sif</h3>
          <h4><b><u><a href="https://css-tricks.com/" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>CSS tricks</small> </a></u></b></h4>
        </div>  
-       <div id="section4" class="container-fluid bg-info text-white" style="padding:100px 20px;">
+
+       <div id="section4" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+        
+        <h1><font color=red> HTML</font></h1>
+         <h3>Html er en anden vigtig del af opsætningen af django.<br>
+        Linket nedenfor giver en god baggrunds viden indenfor nogle af de vigtigste begreber indenfor Html<br>
+    den fåes også som app til mobil og andre android enheder. Den kræver login.</h3>
+         <h4><b><u><a href="https://wildlearner.com/learn/course/html/getting-started/introduction/what-html/" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>HTML</small> </a></u></b></h4>
+       </div>  
+
+       <div id="section5" class="container-fluid bg-info text-white" style="padding:100px 20px;">
         
         <h1><font color=red> Tilbage</font></h1>
          <h3></h3>

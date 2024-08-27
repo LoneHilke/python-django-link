@@ -6,9 +6,18 @@
     Der er flere sider, hvor man kan gøre det, men de koster alle noget.<br>
     Skriver de at det er gratis, er det kun for en kort periode.</h3>
     <h3>Her er en liste over nogle sider, hvor det er muligt, men der er mange flere:</h3>
-    {% for lin in link %}
-    <tk>
-        <li><a href= {{lin.link}} target="_blank"class="nav-link active py-3 border-bottom"> {{lin.name}} </a></li>
-    </tk>
-    {% endfor %}
+    <div class="container mt-3">
+        <div class="row justify-content-center mt-5">
+        <ul class="list-group list-group-horizontal">
+        {% for lin in link %}
+    
+          <li class="list-group-item"><a href= {{lin.link}} target="_blank"class="nav-link active py-3 border-bottom"> {{lin.name}} </a></li>
+          
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    
+    
+    
 {% endblock %}

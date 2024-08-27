@@ -1,6 +1,6 @@
 from django.urls import path
 from django.conf import settings
-from .views import Index, PythonView, DjangoView, Deploy, Terminals
+from .views import Index, PythonView, DjangoView, Deploy, Terminals, Info
 from django.views import View
 from django.conf.urls.static import static
 
@@ -10,4 +10,5 @@ urlpatterns = [
   path('django/', DjangoView.as_view(), name='django'),
   path('deploy/', Deploy.as_view(), name='deploy'),
   path('terminals/', Terminals.as_view(), name='terminals'),
+  path('info/', Info.as_view(), name='info')
   ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

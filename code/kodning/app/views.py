@@ -34,3 +34,7 @@ class Deploy(View):
 class Terminals(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'app/terminals.html')
+    
+class Info(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'app/info.html')
