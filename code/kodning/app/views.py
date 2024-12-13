@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .models import Python, Django, Link
+from .models import Python, Django, Link, Small
 
 # Create your views here.
 class Index(View):
@@ -38,3 +38,11 @@ class Terminals(View):
 class Info(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'app/info.html')
+    
+class SmallView(View):
+    def get(self, request, *args, **kwargs):
+        small = Small.objects.all()
+        context = {
+        'small': small,
+        } 
+        return render(request, 'app/kode.html', context)

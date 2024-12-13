@@ -25,3 +25,7 @@ class Django(models.Model):
 class Link(models.Model):
     name=models.CharField(max_length=50)
     link=models.URLField()
+
+class Small(models.Model):
+   name=models.TextField()
+   foto=models.ImageField()
