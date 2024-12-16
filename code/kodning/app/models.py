@@ -29,3 +29,10 @@ class Link(models.Model):
 class Small(models.Model):
    name=models.TextField()
    foto=models.ImageField()
+
+class Apps(models.Model):
+   app=models.CharField(max_length=250)
+   kort=models.TextField()
+   fordel=models.TextField()
+   ulemp=models.TextField()
+   
