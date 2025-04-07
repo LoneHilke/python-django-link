@@ -46,3 +46,7 @@ class SmallView(View):
         'small': small,
         } 
         return render(request, 'app/kode.html', context)
+    
+class Microsoft(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'app/m365.html')

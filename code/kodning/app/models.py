@@ -28,7 +28,7 @@ class Link(models.Model):
 
 class Small(models.Model):
    name=models.TextField()
-   foto=models.ImageField()
+   foto=models.ImageField(upload_to='staticfiles/images/', blank=True)
 
 class Apps(models.Model):
    app=models.CharField(max_length=250)
